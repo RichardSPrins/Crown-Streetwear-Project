@@ -5,9 +5,9 @@
   flex-direction: column;
   align-items: center;
   margin: 0px auto 0;
-  position: absolute;
-  top: 30%;
-  left: 22%;
+  padding-top: 8%;
+
+  
 
   .test-warning{
     margin: 0 auto;
@@ -26,6 +26,8 @@
     .header-block {
       text-transform: capitalize;
       width: 23%;
+      color: white;
+
 
       &:last-child {
         width: 8%;
@@ -37,5 +39,7 @@
     margin-top: 30px;
     margin-left: auto;
     font-size: 36px;
+    color: white;
+
   }
 }

@@ -9,6 +9,7 @@ import './App.css';
 import { auth,createUserProfileDocument } from './firebase/firebase.utils'
 import { connect } from 'react-redux'
 import { setCurrentUser } from './redux/user/user.actions'
+
 import { selectCurrentUser } from './redux/user/user.selectors'
 
 class App extends React.Component {
@@ -24,7 +25,6 @@ class App extends React.Component {
 
   componentDidMount() {
     const { setCurrentUser } = this.props
-
 
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       // console.log('user auth' , userAuth)
@@ -76,6 +76,7 @@ class App extends React.Component {
 const mapStateToProps = state => {
   return {
     currentUser: selectCurrentUser(state)
+
   }
 }
 
